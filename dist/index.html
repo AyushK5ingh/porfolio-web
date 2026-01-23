@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vCard - Personal Portfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="/assets/logo-BNiAPUDr.svg"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="module" crossorigin src="/assets/index-C-xLY1PN.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Da9CBSmt.css">
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="/assets/MY-AVATAR-C_hoHd-2.png"
+              alt="Ayush Kumar Singh"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Ayush Kumar Singh">Ayush Kumar Singh</h1>
+
+            <p class="title">Full Stack AI Engineer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:ayushks1602@gmail.com" class="contact-link"
+                  >ayushks1602@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+918797781945" class="contact-link"
+                  >+91 8797781945</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="2003-02-16">February 16, 2003</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>India</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://linkedin.com/in/ayushk5ingh/" class="social-link" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://github.com/ayushk5ingh" class="social-link" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://leetcode.com/AyushKSing/" class="social-link" target="_blank">
+                 <ion-icon name="code-slash-outline"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://drive.google.com" class="social-link" target="_blank">
+                 <ion-icon name="document-text-outline"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Projects</button>
+            </li>
+            <!-- <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li> -->
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I'm a Full Stack Engineer and AI Developer from India, specializing in building scalable web applications and intelligent systems. I enjoy architecting complex digital solutions that seamlessly integrate Generative AI with robust engineering to solve real-world problems.
+            </p>
+
+            <p>
+              My job is to build software that is high-performing and secure while remaining intuitive for the user. I bring a data-driven approach to development, ensuring products are optimized for speed and efficiency. I have built impactful software for major organizations like Nestlé and agile startups.
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">Technical Skills</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="/assets/icon-dev--ztZeCVF.svg" alt="languages icon" width="40" />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Languages</h4>
+                  <p class="service-item-text">
+                    JavaScript, TypeScript, Python, C++, Go (Golang), SQL, HTML5, CSS3.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="/assets/icon-design-8hF4EiJB.svg" alt="frontend icon" width="40" />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Frontend & Design</h4>
+                  <p class="service-item-text">
+                    Next.js 15, React 19, Tailwind CSS (v4), Redux, Framer Motion, Shadcn/ui, Figma, UI/UX Design.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="data:image/svg+xml,%3csvg%20width='40'%20height='40'%20viewBox='0%200%2022%2040'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20opacity='0.15'%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M3%201C1.89543%201%201%201.89543%201%203V37C1%2038.1046%201.89543%2039%203%2039H18.9C20.0046%2039%2020.9%2038.1046%2020.9%2037V3C20.9%201.89543%2020.0046%201%2018.9%201H15.6631V2H6.23676V1H3Z'%20fill='url(%23paint0_linear)'/%3e%3cpath%20d='M8.50854%2035.6745C8.13501%2035.6745%207.83221%2035.9773%207.83221%2036.3508C7.83221%2036.7243%208.13501%2037.0271%208.50854%2037.0271V35.6745ZM13.4633%2037.0271C13.8368%2037.0271%2014.1396%2036.7243%2014.1396%2036.3508C14.1396%2035.9773%2013.8368%2035.6745%2013.4633%2035.6745V37.0271ZM0.400024%2029.4141C0.400024%2029.7876%200.702827%2030.0904%201.07635%2030.0904C1.44988%2030.0904%201.75268%2029.7876%201.75268%2029.4141H0.400024ZM1.75268%2032.387C1.75268%2032.0134%201.44988%2031.7106%201.07635%2031.7106C0.702827%2031.7106%200.400024%2032.0134%200.400024%2032.387H1.75268ZM20.2192%207.61303C20.2192%207.98656%2020.522%208.28936%2020.8955%208.28936C21.269%208.28936%2021.5718%207.98656%2021.5718%207.61303H20.2192ZM21.5718%2010.5859C21.5718%2010.2124%2021.269%209.90956%2020.8955%209.90956C20.522%209.90956%2020.2192%2010.2124%2020.2192%2010.5859H21.5718ZM18.48%2038.6473H3.49181V40H18.48V38.6473ZM3.49181%201.35266H6.52662V0H3.49181V1.35266ZM5.8503%201.69206H7.20295V0.676328H5.8503V1.69206ZM7.49281%203.33457H14.4791V1.98191H7.49281V3.33457ZM6.52662%201.35266H15.4452V0H6.52662V1.35266ZM15.4452%201.35266H18.48V0H15.4452V1.35266ZM16.1216%201.69206V0.676328H14.7689V1.69206H16.1216ZM8.50854%2037.0271H13.4633V35.6745H8.50854V37.0271ZM1.75268%2029.4141V3.09179H0.400024V29.4141H1.75268ZM1.75268%2036.9082V32.387H0.400024V36.9082H1.75268ZM20.2192%203.09179V7.61303H21.5718V3.09179H20.2192ZM20.2192%2010.5859V36.9082H21.5718V10.5859H20.2192ZM14.4791%203.33457C15.3862%203.33457%2016.1216%202.5992%2016.1216%201.69206H14.7689C14.7689%201.85214%2014.6392%201.98191%2014.4791%201.98191V3.33457ZM3.49181%2038.6473C2.53132%2038.6473%201.75268%2037.8687%201.75268%2036.9082H0.400024C0.400024%2038.6157%201.78427%2040%203.49181%2040V38.6473ZM18.48%2040C20.1876%2040%2021.5718%2038.6157%2021.5718%2036.9082H20.2192C20.2192%2037.8687%2019.4405%2038.6473%2018.48%2038.6473V40ZM18.48%201.35266C19.4405%201.35266%2020.2192%202.13129%2020.2192%203.09179H21.5718C21.5718%201.38424%2020.1876%200%2018.48%200V1.35266ZM5.8503%201.69206C5.8503%202.5992%206.58567%203.33457%207.49281%203.33457V1.98191C7.33272%201.98191%207.20295%201.85214%207.20295%201.69206H5.8503ZM3.49181%200C1.78427%200%200.400024%201.38424%200.400024%203.09179H1.75268C1.75268%202.13129%202.53132%201.35266%203.49181%201.35266V0Z'%20fill='url(%23paint1_linear)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear'%20x1='2.12767'%20y1='1'%20x2='30.7018'%20y2='17.5237'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20offset='0.259336'%20stop-color='%23FFDB6E'/%3e%3cstop%20offset='1'%20stop-color='%23FFBC5E'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint1_linear'%20x1='1.59976'%20y1='8.08974e-07'%20x2='31.8368'%20y2='17.6727'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20offset='0.259336'%20stop-color='%23FFDB6E'/%3e%3cstop%20offset='1'%20stop-color='%23FFBC5E'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="backend icon" width="40" />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Backend</h4>
+                  <p class="service-item-text">
+                    Node.js, Express.js, Gin (Go), tRPC, WebSocket, Socket.io, Prisma ORM, GraphQL.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="/assets/icon-photo-CsRjUekF.svg" alt="databases icon" width="40" />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Databases & DevOps</h4>
+                  <p class="service-item-text">
+                    PostgreSQL, MongoDB, Redis, Docker, Kubernetes, AWS (EC2, S3), CI/CD (GitHub Actions, Azure DevOps).
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                    <!-- reusing icon-dev for AI -->
+                  <img src="/assets/icon-dev--ztZeCVF.svg" alt="ai icon" width="40" />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">AI & ML</h4>
+                  <p class="service-item-text">
+                    OpenAI GPT-4, Anthropic Claude, DeepSeek, Isolation Forest, Scikit-learn, Pandas, NumPy.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials
+        -->
+
+
+          <!--
+          - testimonials modal
+        -->
+
+
+          <!--
+          - clients
+        -->
+
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Nestlé India (AI/ML Intern)</h4>
+
+                <span>April 2025 — July 2025</span>
+
+                <p class="timeline-text">
+                  Engineered an AI-powered unsupervised anomaly detection system (99% accuracy). Implemented hybrid detection with Isolation Forest. streamline data validation.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Earthemission (SDE Intern)</h4>
+
+                <span>July 2024 — Jan 2025</span>
+
+                <p class="timeline-text">
+                  Implemented authentication and dynamic routing (Next.js, Golang). Optimized DB performance (Redis, PostgreSQL) by 30%. Enhanced API performance and CI/CD pipelines.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">B.Tech in Information Technology</h4>
+                <span>2022 — 2026</span>
+                <p class="timeline-text">Ajay Kumar Garg Engineering College, Ghaziabad.</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Higher Secondary Certificate (HSC)</h4>
+                <span>2019 — 2021</span>
+                <p class="timeline-text">
+                  Holy Mission Senior Secondary School, Danapur, Patna.<br>
+                  Stream: Physics, Chemistry, Maths.<br>
+                  Score: 88.2%
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Secondary School Certificate (SSC)</h4>
+                <span>2012 — 2019</span>
+                <p class="timeline-text">
+                  Radiant International School, Patna.<br>
+                  Score: 82%
+                </p>
+              </li>
+            </ol>
+          </section>
+
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="projects">
+          <header>
+            <h2 class="h2 article-title">Projects</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Full Stack AI</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Real-time System</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>AI Agent</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Distributed System</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Full Stack AI</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Real-time System</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>AI Agent</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Distributed System</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li class="project-item active" data-filter-item data-category="full stack ai">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="https://veroo-ai.vercel.app/" target="_blank" class="project-action-btn" aria-label="Live Preview">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </a>
+                    <a href="https://github.com/AyushK5ingh/vero.git" target="_blank" class="project-action-btn" aria-label="GitHub Repo">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                  </div>
+                  <img src="/assets/vero-CHuTEKcG.png" alt="Vero" loading="lazy" />
+                </figure>
+                <div class="project-content"> 
+                   <h3 class="project-title">Vero</h3>
+                   <p class="project-category">Full Stack AI</p>
+                </div>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="real-time system">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="https://synthex-black.vercel.app/" target="_blank" class="project-action-btn" aria-label="Live Preview">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </a>
+                    <a href="https://github.com/AyushK5ingh/Synthex.git" target="_blank" class="project-action-btn" aria-label="GitHub Repo">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                  </div>
+                  <img src="/assets/synthex-CoDGztSX.png" alt="Synthex" loading="lazy" />
+                </figure>
+                <div class="project-content">
+                  <h3 class="project-title">Synthex</h3>
+                  <p class="project-category">Real-time System</p>
+                </div>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="ai agent">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="https://ai-finance-rust.vercel.app/" target="_blank" class="project-action-btn" aria-label="Live Preview">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </a>
+                    <a href="https://github.com/AyushK5ingh/AI_Finance.git" target="_blank" class="project-action-btn" aria-label="GitHub Repo">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                  </div>
+                  <img src="./assets/images/project-3.jpg" alt="AI Finance Assistant" loading="lazy" />
+                </figure>
+                <div class="project-content">
+                  <h3 class="project-title">AI Finance Assistant</h3>
+                  <p class="project-category">AI Agent</p>
+                </div>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="distributed system">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="https://watch-the-drop-v2.vercel.app/" target="_blank" class="project-action-btn" aria-label="Live Preview">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </a>
+                    <a href="https://github.com/AyushK5ingh/Watch_the_Drop.git" target="_blank" class="project-action-btn" aria-label="GitHub Repo">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                  </div>
+                  <img src="/assets/watch-the-drop-BQp5Agho.png" alt="WatchTheDrop" loading="lazy" />
+                </figure>
+                <div class="project-content">
+                  <h3 class="project-title">WatchTheDrop</h3>
+                  <p class="project-category">Distributed System</p>
+                </div>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="ai agent">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="#" target="_blank" class="project-action-btn" aria-label="Live Preview">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </a>
+                    <a href="https://github.com/AyushK5ingh/anomaly-detection.git" target="_blank" class="project-action-btn" aria-label="GitHub Repo">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                  </div>
+                  <img src="/assets/anamoly-BpCyM8xN.png" alt="Anomaly Detection" loading="lazy" />
+                </figure>
+                <div class="project-content">
+                  <h3 class="project-title">Anomaly Detection Script</h3>
+                  <p class="project-category">AI Agent</p>
+                </div>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="distributed system">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="#" target="_blank" class="project-action-btn" aria-label="Live Preview">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </a>
+                    <a href="https://github.com/AyushK5ingh/golang-contest-portal.git" target="_blank" class="project-action-btn" aria-label="GitHub Repo">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                  </div>
+                  <img src="/assets/contest-CJb6vbim.png" alt="Golang Contest Portal" loading="lazy" />
+                </figure>
+                <div class="project-content">
+                  <h3 class="project-title">Golang Contest Portal</h3>
+                  <p class="project-category">Distributed System</p>
+                </div>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="real-time system">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <a href="#" target="_blank" class="project-action-btn" aria-label="Live Preview">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </a>
+                    <a href="https://github.com/AyushK5ingh/scalable-chatapp-backend.git" target="_blank" class="project-action-btn" aria-label="GitHub Repo">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                  </div>
+                  <img src="/assets/chat-app-BzH6k04g.png" alt="Scalable Chat App" loading="lazy" />
+                </figure>
+                <div class="project-content">
+                  <h3 class="project-title">Scalable Chat App Backend</h3>
+                  <p class="project-category">Real-time System</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #BLOG
+      -->
+
+
+        <!--
+        - #CONTACT
+      -->
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                id="map-iframe"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form class="form" data-form>
+              <!-- Web3Forms Hidden Inputs -->
+              <input type="hidden" name="access_key" id="web3forms_key">
+              <input type="hidden" name="subject" value="New Submission from Portfolio">
+              <input type="hidden" name="from_name" value="My Portfolio">
+              <!-- Honeypot for spam protection -->
+              <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+      - #RESUME FLOATING BUTTON
+    -->
+    <a href="https://drive.google.com/file/d/1kD7vS7KTv8N5ke4tPYZTK59hCsJJ_3RN/view?usp=sharing" class="resume-btn" target="_blank" title="Download Resume">
+      <ion-icon name="document-text-outline"></ion-icon>
+    </a>
+
+    <!--
+    - custom js link
+  -->
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
