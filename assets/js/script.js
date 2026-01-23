@@ -102,6 +102,14 @@ for (let i = 0; i < formInputs.length; i++) {
 // Handle Form Submission
 form.addEventListener("submit", function (e) {
   e.preventDefault();
+
+  // Populate to_name for EmailJS
+  const fullnameInput = form.querySelector('[name="fullname"]');
+  const toNameInput = document.getElementById("to_name_field");
+  if (fullnameInput && toNameInput) {
+    toNameInput.value = fullnameInput.value;
+  }
+
   const formData = new FormData(form);
   const object = Object.fromEntries(formData);
   const json = JSON.stringify(object);
