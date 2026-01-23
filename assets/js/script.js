@@ -89,6 +89,15 @@ const formBtn = document.querySelector("[data-form-btn]");
 for (let i = 0; i < formInputs.length; i++) {
   formInputs[i].addEventListener("input", function () {
 
+    // Custom Email Validation Message
+    if (formInputs[i].type === "email") {
+      if (formInputs[i].validity.patternMismatch) {
+        formInputs[i].setCustomValidity("Please enter a valid email address (e.g., name@example.com)");
+      } else {
+        formInputs[i].setCustomValidity("");
+      }
+    }
+
     // check form validation
     if (form.checkValidity()) {
       formBtn.removeAttribute("disabled");
