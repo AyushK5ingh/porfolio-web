@@ -1896,7 +1896,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   bottom: 20px;
   right: 20px;
   background: var(--orange-yellow-crayola);
-  color: var(--white-1);
+  color: black;
   width: 50px;
   height: 50px;
   border-radius: 50%;
