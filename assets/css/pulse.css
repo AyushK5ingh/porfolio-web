@@ -1,0 +1,10 @@
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 hsla(45, 100%, 72%, 0.4); }
+  70% { box-shadow: 0 0 0 10px hsla(45, 100%, 72%, 0); }
+  100% { box-shadow: 0 0 0 0 hsla(45, 100%, 72%, 0); }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}

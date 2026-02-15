@@ -5,30 +5,32 @@
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(220, 20%, 30%) 3%, 
-    hsl(222, 25%, 20%) 97%
+    min(240, 4%), 
+    min(240, 2%)
   );
+  
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
-    hsla(220, 20%, 25%, 0.251) 0%, 
-    hsla(222, 25%, 15%, 0) 100%
-  ), hsl(222, 25%, 17%);
+    hsla(240, 1%, 18%, 0.251) 0%, 
+    hsla(240, 2%, 11%, 0) 100%
+  ), hsl(240, 2%, 13%);
   
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
     hsl(45, 100%, 71%) 0%, 
     hsla(36, 100%, 69%, 0) 50%
   );
+  
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
     hsla(45, 100%, 71%, 0.251) 0%, 
     hsla(35, 100%, 68%, 0) 59.86%
-  ), hsl(222, 25%, 17%);
+  ), hsl(240, 2%, 13%);
   
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(220, 20%, 35%) 0%, 
-    hsla(220, 20%, 35%, 0) 50%
+    hsl(0, 0%, 25%) 0%, 
+    hsla(0, 0%, 25%, 0) 50%
   );
   
   /* TEXT GRADIENT */
@@ -41,15 +43,15 @@
   /* SOLID COLORS */
 
   /* Deep Navy Border/Accent */
-  --jet: hsl(220, 15%, 30%); 
+  --jet: hsl(240, 1%, 20%); 
   /* Lighter Navy for Cards */
-  --onyx: hsl(220, 20%, 25%);
+  --onyx: hsl(240, 1%, 17%);
   /* main card background */
-  --eerie-black-1: hsl(222, 25%, 15%);
+  --eerie-black-1: hsl(240, 2%, 13%);
   /* secondary background */
-  --eerie-black-2: hsl(222, 25%, 17%);
+  --eerie-black-2: hsl(240, 2%, 12%);
   /* Page Background (Deepest Navy) */
-  --smoky-black: hsl(220, 39%, 10%);
+  --smoky-black: hsl(0, 0%, 7%);
   
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
@@ -58,8 +60,8 @@
   --orange-yellow-crayola: hsl(45, 100%, 72%);
   --vegas-gold: hsl(45, 54%, 58%);
   
-  --light-gray: hsl(220, 10%, 86%);
-  --light-gray-70: hsla(220, 10%, 86%, 0.7);
+  --light-gray: hsl(0, 0%, 84%);
+  --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
 
   /**
@@ -67,7 +69,7 @@
    */
 
   /* font-family */
-  --ff-poppins: 'Poppins', sans-serif;
+  --ff-poppins: 'Outfit', sans-serif;
 
   /* font-size */
   --fs-1: 24px;
@@ -101,6 +103,19 @@
 
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
+  
+   /**
+   * Glassmorphism
+   */
+   --glass-bg: hsla(240, 2%, 11%, 0.6); /* Slightly more transparent */
+   --glass-border: 1px solid hsla(0, 0%, 100%, 0.08); /* Thinner, subtler border */
+   --glass-shadow: 
+     0 4px 24px -1px rgba(0, 0, 0, 0.2),
+     0 0 0 1px rgba(255, 255, 255, 0.02) inset; /* Inner glow */
+   --backdrop-filter: blur(16px); /* Stronger blur */
+  
+   /* SMOOTH TRANSITION */
+   --transition-smooth: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
 }
 
@@ -148,7 +163,80 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--smoky-black); }
+html,
+a,
+button,
+input,
+textarea,
+select,
+label,
+[role="button"] {
+  cursor: none !important; /* Force hide default cursor everywhere */
+}
+
+/* Custom Cursor */
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+/* Custom Cursor */
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--white-1);
+}
+
+.cursor-outline {
+  width: 40px;
+  height: 40px;
+  border: 1px solid hsla(0, 0%, 100%, 0.5);
+  background: hsla(0, 0%, 100%, 0.05); /* Slight fill */
+  transition: width 0.2s, height 0.2s, background-color 0.2s;
+  mix-blend-mode: difference; /* Inverts colors for visibility */
+}
+
+body:hover .cursor-dot,
+body:hover .cursor-outline {
+  opacity: 1;
+}
+
+/* Hover state for links and buttons */
+body:has(a:hover) .cursor-outline,
+body:has(button:hover) .cursor-outline,
+body:has(.project-item:hover) .cursor-outline,
+body:has(.service-item:hover) .cursor-outline {
+  width: 80px;
+  height: 80px;
+  background-color: var(--white-1);
+  mix-blend-mode: difference;
+  border-color: transparent;
+}
+
+body {
+  background: var(--smoky-black);
+  background-image: 
+    radial-gradient(circle at 20% 20%, hsla(240, 60%, 25%, 0.1) 0%, transparent 40%),
+    radial-gradient(circle at 80% 80%, hsla(45, 100%, 72%, 0.05) 0%, transparent 40%);
+  background-attachment: fixed;
+}
 
 
 
@@ -160,8 +248,10 @@ body { background: var(--smoky-black); }
 
 .sidebar,
 article {
-  background: var(--eerie-black-2);
+  background: var(--glass-bg);
   border: 1px solid var(--jet);
+  backdrop-filter: var(--backdrop-filter);
+  -webkit-backdrop-filter: var(--backdrop-filter);
   border-radius: 20px;
   padding: 15px;
   box-shadow: var(--shadow-1);
@@ -209,8 +299,8 @@ article.active {
 }
 
 @keyframes fade {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 .h2,
@@ -276,6 +366,7 @@ article.active {
   z-index: 1;
 }
 
+
 .content-card::before {
   content: "";
   position: absolute;
@@ -283,6 +374,21 @@ article.active {
   background: var(--bg-gradient-jet);
   border-radius: inherit;
   z-index: -1;
+  transition: var(--transition-1);
+}
+
+.content-card:hover::before {
+  background: linear-gradient(
+    to bottom right,
+    hsla(240, 1%, 25%, 0.4) 0%,
+    hsla(240, 2%, 18%, 0.1) 100%
+  );
+}
+
+.content-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-3);
+  border-color: var(--orange-yellow-crayola);
 }
 
 
@@ -449,15 +555,20 @@ main {
 
 .navbar {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
-  backdrop-filter: blur(10px);
-  border: 1px solid var(--jet);
-  border-radius: 12px 12px 0 0;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  min-width: 300px;
+  background: hsla(240, 2%, 12%, 0.5); /* More transparent */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--jet); /* Changed from white-1 to jet for subtle look, or remove entirely if requested. User said "get rid of white border", so making it subtle jet or transparent is safer for design consistency, but I will make it var(--glass-border) for consistency. */
+  border: var(--glass-border);
+  border-radius: 20px; /* Fully rounded */
   box-shadow: var(--shadow-2);
   z-index: 5;
+  padding: 0 10px;
 }
 
 .navbar-list {
@@ -522,6 +633,7 @@ main {
   border-radius: 14px;
   box-shadow: var(--shadow-2);
   z-index: 1;
+  transition: var(--transition-smooth);
 }
 
 .service-item::before {
@@ -531,6 +643,22 @@ main {
   background: var(--bg-gradient-jet);
   border-radius: inherit;
   z-index: -1;
+  transition: var(--transition-smooth);
+}
+
+.service-item:hover::before {
+  background: linear-gradient(
+    to bottom right,
+    hsla(240, 1%, 25%, 0.5) 0%,
+    hsla(240, 2%, 18%, 0.2) 100%
+  );
+}
+
+.service-item:hover {
+  transform: translateY(-8px); /* Slightly improved lift */
+  box-shadow: 0 20px 40px hsla(0, 0%, 0%, 0.4); /* Softer, deeper shadow */
+  border-color: var(--orange-yellow-crayola);
+  transition: var(--transition-smooth);
 }
 
 .service-icon-box { margin-bottom: 10px; }
@@ -968,22 +1096,65 @@ main {
   transition: var(--transition-1);
 }
 
+
 .project-item:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); }
 
 .project-item-icon-box {
   --scale: 0.8;
 
+  background: var(--jet);
+  color: var(--orange-yellow-crayola);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(var(--scale));
+  font-size: 20px;
+  padding: 12px;
+  border-radius: 12px;
+  opacity: 0;
+  z-index: 1;
+  transition: var(--transition-1);
   display: flex;
   align-items: center;
-  gap: 15px;
-  opacity: 0;
-  z-index: 2;
+  gap: 10px;
+}
+
+.project-item:hover .project-item-icon-box {
+  --scale: 1;
+  opacity: 1;
+}
+
+.project-item-icon-box a {
+  padding: 12px;
+  background: var(--onyx);
+  border-radius: 50%;
+  color: var(--light-gray);
+  transition: var(--transition-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-item-icon-box a:hover {
+  background: var(--orange-yellow-crayola);
+  color: var(--white-1);
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-3);
+  border-color: var(--orange-yellow-crayola);
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: var(--transition-1);
 }
+
+.project-item:hover img { transform: scale(1.1); }
+
 
 .project-item:hover .project-item-icon-box {
   --scale: 1;
@@ -1160,12 +1331,14 @@ main {
 
 .form-input {
   color: var(--white-2);
+  background: hsla(240, 2%, 18%, 0.5); /* Glassy input */
   font-size: var(--fs-6);
   font-weight: var(--fw-400);
   padding: 13px 20px;
   border: 1px solid var(--jet);
   border-radius: 14px;
   outline: none;
+  transition: var(--transition-1);
 }
 
 .form-input::placeholder { font-weight: var(--fw-500); }

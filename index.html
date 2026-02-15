@@ -37,6 +37,7 @@
     - custom css link
   -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/pulse.css" />
 
     <!--
     - google font link
@@ -85,9 +86,12 @@
   </head>
 
   <body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
     <!--
     - #MAIN
-  -->
+    -->
 
     <main>
       <!--
@@ -96,7 +100,7 @@
 
       <aside class="sidebar" data-sidebar>
         <div class="sidebar-info">
-          <figure class="avatar-box">
+          <figure class="avatar-box pulse">
             <img
               src="./assets/images/myavatar.png"
               alt="Ayush Kumar Singh"
@@ -169,7 +173,7 @@
               <div class="contact-info">
                 <p class="contact-title">Location</p>
 
-                <address>India</address>
+                <address>Ghaziabad, Uttar Pradesh, India</address>
               </div>
             </li>
           </ul>
@@ -245,15 +249,13 @@
 
           <section class="about-text">
             <p>
-              Full-stack AI/ML engineer specializing in building scalable, production-grade web applications with modern JavaScript and TypeScript stacks. I work across the full product lifecycle—from designing system architecture and data models to delivering responsive UIs, real-time features, and robust backend services.
+              I am a Full-Stack AI/ML Engineer Intern at Nestlé India and a final-year B.Tech student in Information Technology. I specialize in building scalable, production-grade web applications using the Modern Tech Stack (Next.js 15, React 19, Node.js, TypeScript).
             </p>
-
             <p>
-              I’ve built and deployed applications using Next.js 15, React 19, Node.js, PostgreSQL, Docker, and tRPC, with a strong focus on performance, type safety, and clean API design. At Nestlé India, I developed data-driven dashboards and backend services that reduced manual reporting time by 60% and delivered 99%+ system accuracy on large-scale datasets. My projects, including Vero (a full-stack development platform) and Synthex (a real-time collaborative code editor), showcase experience with microservices, WebSockets, Redis Pub/Sub, and scalable architectures handling 500+ concurrent sessions.
+              My expertise spans the full software development lifecycle—from designing type-safe backend architectures with tRPC and Prisma to creating real-time, responsive frontends with Tailwind CSS and Socket.io. I have a strong foundation in Data Structures & Algorithms (250+ problems solved) and System Design.
             </p>
-
             <p>
-              I’m comfortable working with React, Next.js, Node.js, Go, PostgreSQL, MongoDB, Redis, AWS, Docker, and CI/CD pipelines, along with core concepts like DSA, system design, microservices, and testing (Jest, TDD). Outside of development, I’ve delivered talks on full-stack development and system design to 500+ attendees and solved 200+ DSA problems on LeetCode and CodeChef using C++.
+              At Nestlé, I engineered AI-powered dashboards that reduced manual reporting time by 60% and optimized backend services to achieve 99%+ system accuracy. I am passionate about open source (contributing to Meshery/CNCF) and constantly learning new technologies like Go and Kubernetes.
             </p>
           </section>
 
@@ -267,39 +269,12 @@
             <ul class="service-list">
               <li class="service-item">
                 <div class="service-icon-box">
-                  <ion-icon name="code-slash-outline" style="font-size: 40px; color: var(--orange-yellow-crayola); margin: auto;"></ion-icon>
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Languages</h4>
-                  <p class="service-item-text">
-                    JavaScript (ES6+), TypeScript, Python, C++, Golang, SQL, HTML5, CSS3, scripting basics.
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <ion-icon name="layers-outline" style="font-size: 40px; color: var(--orange-yellow-crayola); margin: auto;"></ion-icon>
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Core Concepts</h4>
-                  <p class="service-item-text">
-                    Data Structures & Algorithms (DSA), Object-Oriented Programming (OOPs), DBMS, Computer Networks, Operating Systems (OS), System Design.
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
                   <ion-icon name="desktop-outline" style="font-size: 40px; color: var(--orange-yellow-crayola); margin: auto;"></ion-icon>
                 </div>
-
                 <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Frontend & Design</h4>
+                  <h4 class="h4 service-item-title">Frontend</h4>
                   <p class="service-item-text">
-                    Next.js 15, React.js (Component-based Architecture), Redux, Tailwind CSS, Framer Motion, Figma, UI/UX Principles, Responsive Design.
+                    React.js 18/19, Next.js 14/15, TypeScript, Redux, Tailwind CSS, HTML5, CSS3, Responsive Design.
                   </p>
                 </div>
               </li>
@@ -308,11 +283,10 @@
                 <div class="service-icon-box">
                   <ion-icon name="server-outline" style="font-size: 40px; color: var(--orange-yellow-crayola); margin: auto;"></ion-icon>
                 </div>
-
                 <div class="service-content-box">
                   <h4 class="h4 service-item-title">Backend</h4>
                   <p class="service-item-text">
-                    Node.js, Express.js, RESTful API Development, Database Schema Design, WebSocket, Socket.io, Prisma ORM, GraphQL.
+                    Node.js, Express.js, Go (Gin), Python, GraphQL, tRPC, WebSockets (Socket.io), Prisma ORM, JWT/OAuth.
                   </p>
                 </div>
               </li>
@@ -321,25 +295,22 @@
                 <div class="service-icon-box">
                   <ion-icon name="cloud-upload-outline" style="font-size: 40px; color: var(--orange-yellow-crayola); margin: auto;"></ion-icon>
                 </div>
-
                 <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Databases & Tools</h4>
+                  <h4 class="h4 service-item-title">DevOps & Databases</h4>
                   <p class="service-item-text">
-                    PostgreSQL, MySQL, MongoDB, Redis, Git (Version Control), Docker, AWS (EC2, S3), CI/CD (Azure DevOps).
+                    AWS (EC2, S3, Lambda), Docker, GitHub Actions (CI/CD), PostgreSQL, MySQL, MongoDB, Redis.
                   </p>
                 </div>
               </li>
 
               <li class="service-item">
                 <div class="service-icon-box">
-                    <!-- reusing icon-dev for AI -->
-                  <ion-icon name="hardware-chip-outline" style="font-size: 40px; color: var(--orange-yellow-crayola); margin: auto;"></ion-icon>
+                  <ion-icon name="layers-outline" style="font-size: 40px; color: var(--orange-yellow-crayola); margin: auto;"></ion-icon>
                 </div>
-
                 <div class="service-content-box">
-                  <h4 class="h4 service-item-title">AI & ML</h4>
+                  <h4 class="h4 service-item-title">Core Concepts</h4>
                   <p class="service-item-text">
-                    OpenAI GPT-4 API, Anthropic Claude, DeepSeek, Isolation Forest, Scikit-learn, Pandas, NumPy.
+                    DSA (C++), System Design, Microservices, OOP, Agile/Scrum, SDLC, Testing (Jest, TDD).
                   </p>
                 </div>
               </li>
@@ -446,22 +417,10 @@
 
             <ol class="timeline-list">
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Nestlé India (AI/ML Intern)</h4>
-
+                <h4 class="h4 timeline-item-title">Nestlé India (Full-Stack AI ML Engineer Intern)</h4>
                 <span>April 2025 — July 2025</span>
-
                 <p class="timeline-text">
-                  Engineered an AI-powered unsupervised anomaly detection system (99% accuracy). Implemented hybrid detection with Isolation Forest. streamline data validation.
-                </p>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Earthemission (SDE Intern)</h4>
-
-                <span>July 2024 — April 2025</span>
-
-                <p class="timeline-text">
-                  Implemented authentication and dynamic routing (Next.js, Golang). Optimized DB performance (Redis, PostgreSQL) by 30%. Enhanced API performance and CI/CD pipelines.
+                  Built responsive full-stack dashboards (React.js, Node.js) for real-time monitoring, reducing manual reporting by 60%. Engineered backend services with optimized queries achieving 99%+ system accuracy. Implemented automated reporting (Python) and integrated Jest testing.
                 </p>
               </li>
             </ol>
@@ -787,6 +746,7 @@
     - custom js link
   -->
     <script type="module" src="./assets/js/script.js"></script>
+    <script type="module" src="./assets/js/cursor.js"></script>
 
     <!--
     - ionicon link
