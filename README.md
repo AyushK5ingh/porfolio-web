@@ -1,44 +1,56 @@
-# vCard - Personal portfolio
+# Ayush Kumar Singh - Personal Portfolio
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+A modern, responsive personal portfolio website showcasing my work as a **Full Stack AI Developer** and **Machine Learning Engineer**. Built with a focus on premium aesthetics, smooth interactions, and performance.
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+## 🚀 Features
 
-## Demo
+-   **Premium Dark Theme**: Deep Onyx/Jet color palette with refined Gold accents.
+-   **Glassmorphism**: Frosted glass effects on the sidebar, navbar, and project cards for a modern look.
+-   **Custom Cursor**: Interactive cursor with a fluid trailing effect and `mix-blend-mode: difference` for high contrast.
+-   **Responsive Design**: Fully optimized for all devices (Desktop, Tablet, Mobile).
+-   **Interactive Elements**:
+    -   Hover effects on project and skill cards (lift, shadow, border glow).
+    -   Floating navigation bar with blur effect.
+    -   Pulse animation for the avatar.
+-   **Contact Form**: integrated with **EmailJS** and **Web3Forms** for real-time messaging.
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+## 🛠️ Tech Stack
 
-## Prerequisites
+-   **Frontend**: HTML5, CSS3 (Custom Properties, Flexbox, Grid), JavaScript (ES6+)
+-   **Icons**: [Ionicons](https://ionic.io/ionicons)
+-   **Fonts**: [Outfit](https://fonts.google.com/specimen/Outfit) (Google Fonts)
+-   **Design Style**: Glassmorphism, Minimalist Dark Mode
 
-Before you begin, ensure you have met the following requirements:
+## 📦 Installation & Setup
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/AyushK5ingh/portfolio.git
+    cd portfolio
+    ```
 
-## Installing vCard
+2.  **Install dependencies** (if using Vite/Node):
+    ```bash
+    npm install
+    ```
 
-To install **vCard**, follow these steps:
+3.  **Run the development server**:
+    ```bash
+    npm run dev
+    ```
 
-Linux and macOS:
+4.  **Build for production**:
+    ```bash
+    npm run build
+    ```
 
-```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
+## 📬 Contact
 
-Windows:
+-   **Portfolio**: [ayushk5ingh.tech](https://ayushk5ingh.tech/)
+-   **LinkedIn**: [Ayush Kumar Singh](https://linkedin.com/in/ayushk5ingh/)
+-   **GitHub**: [AyushK5ingh](https://github.com/AyushK5ingh)
+-   **Email**: [ayushks1602@gmail.com](mailto:ayushks1602@gmail.com)
 
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
+## 📄 License
 
-## Contact
-
-If you want to contact me you can reach me at [Twitter](https://www.x.com/codewithsadee_).
-
-## License
-
-MIT
+This project is open source and available under the [MIT License](LICENSE).
