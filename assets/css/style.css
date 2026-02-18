@@ -415,7 +415,7 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: 112px;
+  max-height: 132px; /* Increased further by ~7px (half of previous 13px increase) */
   overflow: hidden;
   transition: var(--transition-2);
 }
