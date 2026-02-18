@@ -1719,6 +1719,9 @@ textarea.form-input::-webkit-resizer { display: none; }
    * #CONTACT
    */
 
+
+  .contact-data { margin-bottom: 30px; }
+
   .mapbox {
     height: 380px;
     border-radius: 18px;
@@ -2052,7 +2055,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     visibility: visible;
   }
 
-  .contacts-list { grid-template-columns: 1fr; }
+  .sidebar .contacts-list { grid-template-columns: 1fr; }
 
   .contact-info :is(.contact-link) {
     white-space: nowrap;
