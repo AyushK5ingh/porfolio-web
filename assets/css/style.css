@@ -1490,7 +1490,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .sidebar, article {
-    width: 520px;
+    width: auto;
     margin-inline: auto;
     padding: 30px;
   }
@@ -1530,11 +1530,11 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .sidebar {
-    max-height: 180px;
+    max-height: 210px;
     margin-bottom: 30px;
   }
 
-  .sidebar.active { max-height: 584px; }
+  .sidebar.active { max-height: max-content; }
 
   .sidebar-info { gap: 25px; }
 
