@@ -1451,6 +1451,20 @@ textarea.form-input::-webkit-resizer { display: none; }
   .project-img,
   .blog-banner-box { height: auto; }
 
+  /**
+   * #NAVBAR
+   */
+
+
+
+
+  .navbar-list {
+    gap: 20px;
+    flex-wrap: nowrap;
+  }
+
+  .navbar-link { --fs-8: 14px; }
+
 }
 
 
@@ -1534,7 +1548,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-bottom: 30px;
   }
 
-  .sidebar.active { max-height: max-content; }
+  .sidebar.active { max-height: 800px; }
 
   .sidebar-info { gap: 25px; }
 
@@ -1574,9 +1588,13 @@ textarea.form-input::-webkit-resizer { display: none; }
    * #NAVBAR
    */
 
-  .navbar { border-radius: 20px 20px 0 0; }
 
-  .navbar-list { gap: 20px; }
+
+
+  .navbar-list {
+    gap: 20px;
+    flex-wrap: nowrap;
+  }
 
   .navbar-link { --fs-8: 14px; }
 
