@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ayushk5ingh.tech/sitemap.xml
