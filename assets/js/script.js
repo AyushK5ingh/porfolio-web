@@ -129,12 +129,12 @@ if (osModalWrapper && osModalBtn) {
     osModalWrapper.classList.add("opacity-100");
 
     // Fade in Backdrop
-    osModalBackdrop.classList.remove("opacity-0");
-    osModalBackdrop.classList.add("opacity-100");
+    osModalBackdrop.classList.remove("opacity-0", "pointer-events-none");
+    osModalBackdrop.classList.add("opacity-100", "pointer-events-auto");
 
     // Animate Panel (fade in & scale up)
     osModalPanel.classList.remove("opacity-0", "scale-95");
-    osModalPanel.classList.add("opacity-100", "scale-100");
+    osModalPanel.classList.add("opacity-100", "scale-100", "pointer-events-auto");
 
     // Focus Management
     setTimeout(() => {
@@ -153,11 +153,11 @@ if (osModalWrapper && osModalBtn) {
     osModalWrapper.classList.add("pointer-events-none", "opacity-0");
 
     // Fade out Backdrop
-    osModalBackdrop.classList.remove("opacity-100");
-    osModalBackdrop.classList.add("opacity-0");
+    osModalBackdrop.classList.remove("opacity-100", "pointer-events-auto");
+    osModalBackdrop.classList.add("opacity-0", "pointer-events-none");
 
     // Animate Panel (fade out & scale down)
-    osModalPanel.classList.remove("opacity-100", "scale-100");
+    osModalPanel.classList.remove("opacity-100", "scale-100", "pointer-events-auto");
     osModalPanel.classList.add("opacity-0", "scale-95");
   };
 

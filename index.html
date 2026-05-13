@@ -459,12 +459,12 @@
             <h3 class="h3 service-title">Open Source Highlights</h3>
             
             <ul class="service-list">
-              <li class="service-item" id="os-modal-btn" style="grid-column: 1 / -1; cursor: pointer; display: flex; align-items: center; gap: 25px;">
+              <li class="service-item cursor-pointer" id="os-modal-btn" style="grid-column: 1 / -1; display: flex; align-items: center; gap: 25px;">
                 <div class="service-icon-box" style="margin-bottom: 0; flex-shrink: 0;">
-                  <ion-icon name="logo-github" style="font-size: 55px; color: var(--orange-yellow-crayola);"></ion-icon>
+                  <ion-icon name="logo-github" class="transition-colors duration-200" style="font-size: 55px; color: var(--orange-yellow-crayola);"></ion-icon>
                 </div>
                 <div class="service-content-box" style="text-align: left;">
-                  <h4 class="h4 service-item-title" style="margin-bottom: 10px;">10 Merged PRs at freeCodeCamp & Meshery (CNCF)</h4>
+                  <h4 class="h4 service-item-title transition-colors duration-200" style="margin-bottom: 10px;">10 Merged PRs at freeCodeCamp & Meshery (CNCF)</h4>
                   <p class="service-item-text">
                     Actively contributing to globally recognized open-source projects. Fixed critical client-side UI bugs with debounce logic, repaired failing Data Structures curriculum tests, and authored featured release documentation for Meshery v1.0 at KubeCon EU.
                   </p>
@@ -482,7 +482,7 @@
             <h3 class="h3 service-title">Technical Skills</h3>
 
             <ul class="service-list">
-              <li class="service-item">
+              <li class="service-item cursor-pointer">
                 <div class="service-icon-box">
                   <ion-icon
                     name="code-slash-outline"
@@ -501,7 +501,7 @@
                 </div>
               </li>
 
-              <li class="service-item">
+              <li class="service-item cursor-pointer">
                 <div class="service-icon-box">
                   <ion-icon
                     name="desktop-outline"
@@ -520,7 +520,7 @@
                 </div>
               </li>
 
-              <li class="service-item">
+              <li class="service-item cursor-pointer">
                 <div class="service-icon-box">
                   <ion-icon
                     name="server-outline"
@@ -539,7 +539,7 @@
                 </div>
               </li>
 
-              <li class="service-item">
+              <li class="service-item cursor-pointer">
                 <div class="service-icon-box">
                   <ion-icon
                     name="cloud-upload-outline"
@@ -553,14 +553,13 @@
                 <div class="service-content-box">
                   <h4 class="h4 service-item-title">Databases & Tools</h4>
                   <p class="service-item-text">
-                    PostgreSQL, MySQL, MongoDB, Redis, Database Design, Query
-                    Optimization, AWS (EC2, S3, Lambda), Docker, GitHub Actions
-                    (CI/CD), Git, VS Code, Postman, npm/yarn.
+                    PostgreSQL, MySQL, MongoDB, GitHub Actions
+                    (CI/CD), Git, Postman.
                   </p>
                 </div>
               </li>
 
-              <li class="service-item">
+              <li class="service-item cursor-pointer">
                 <div class="service-icon-box">
                   <ion-icon
                     name="analytics-outline"
@@ -579,7 +578,7 @@
                 </div>
               </li>
 
-              <li class="service-item">
+              <li class="service-item cursor-pointer">
                 <div class="service-icon-box">
                   <ion-icon
                     name="layers-outline"
@@ -1626,7 +1625,7 @@
       <div id="os-modal-backdrop" class="fixed inset-0 bg-slate-900/70 backdrop-blur-sm transition-opacity duration-200 ease-out opacity-0 pointer-events-none" aria-hidden="true"></div>
 
       <!-- Modal panel -->
-      <div id="os-modal-panel" class="relative w-full max-w-2xl bg-slate-800 rounded-xl shadow-2xl overflow-hidden transform scale-95 opacity-0 transition-all duration-200 ease-out pointer-events-auto flex flex-col max-h-[85vh]">
+      <div id="os-modal-panel" class="relative w-full max-w-2xl bg-slate-800 rounded-xl shadow-2xl overflow-hidden transform scale-95 opacity-0 transition-all duration-200 ease-out flex flex-col max-h-[85vh]">
         <!-- Header -->
         <div class="border-b border-slate-700 p-4 flex items-center justify-between">
           <h4 class="text-lg font-semibold text-white" style="margin-bottom:0; text-transform:none;">Open Source Contributions</h4>

@@ -198,19 +198,7 @@ label,
   transform: translate(-50%, -50%);
   border-radius: 50%;
   z-index: 9999;
-  pointer-events: none;
-}
-
-/* Custom Cursor */
-.cursor-dot,
-.cursor-outline {
-  position: fixed;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  z-index: 9999;
-  pointer-events: none;
+  pointer-events: none !important;
 }
 
 .cursor-dot {
