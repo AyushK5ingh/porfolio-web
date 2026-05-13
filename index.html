@@ -21,7 +21,7 @@
     <meta property="og:url" content="https://ayushk5ingh.tech/" />
     <meta
       property="og:title"
-      content="Ayush Kumar Singh | Full-Stack AI/ML Engineer"
+      content="Ayush Kumar Singh | Full Stack Software Engineer"
     />
     <meta
       property="og:description"
@@ -37,7 +37,7 @@
     <meta name="twitter:url" content="https://ayushk5ingh.tech/" />
     <meta
       name="twitter:title"
-      content="Ayush Kumar Singh | Full-Stack AI/ML Engineer"
+      content="Ayush Kumar Singh | Full Stack Software Engineer"
     />
     <meta
       name="twitter:description"
@@ -47,7 +47,7 @@
       name="twitter:image"
       content="https://ayushk5ingh.tech/assets/images/image.png"
     />
-    <title>Ayush Kumar Singh | Full-Stack AI/ML Engineer</title>
+    <title>Ayush Kumar Singh | Full Stack Software Engineer</title>
 
     <!--
     - favicon
@@ -59,6 +59,17 @@
       href="./assets/images/logo.svg"
       type="image/x-icon"
     />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {}
+        }
+      }
+    </script>
 
     <!--
     - custom css link
@@ -115,7 +126,7 @@
           "https://x.com/AyushK5ingh",
           "https://leetcode.com/u/AyushK5ingh/"
         ],
-        "jobTitle": "Full Stack Engineer & AI Developer",
+        "jobTitle": "Full Stack Software Engineer",
         "worksFor": {
           "@type": "Organization",
           "name": "Nestlé India"
@@ -151,7 +162,7 @@
           <div class="info-content">
             <h1 class="name" title="Ayush Kumar Singh">Ayush Kumar Singh</h1>
 
-            <p class="title">Full-Stack AI/ML Engineer</p>
+            <p class="title">Full Stack Software Engineer</p>
             <ul class="social-list">
               <li class="social-item">
                 <a
@@ -434,30 +445,34 @@
 
           <section class="about-text">
             <p>
-              I am a Full-Stack AI/ML Engineer Intern at Nestlé India and a
-              final-year B.Tech student in Information Technology. I specialize
-              in building scalable, production-grade web applications using the
-              Modern Tech Stack (Next.js 15, React 19, Node.js, TypeScript). I
-              am a Full-Stack AI/ML Engineer with hands-on experience building
-              scalable, production-grade web applications and intelligent
-              systems. I specialize in modern web technologies including Next.js
-              15, React 19, Node.js, and TypeScript.
+              I am a Full Stack Software Engineer and a final-year B.Tech student in Information Technology at Ajay Kumar Garg Engineering College. I specialize in building scalable, production-grade web applications and intelligent systems using modern technologies like Next.js, React, Node.js, and TypeScript.
             </p>
             <p>
-              My expertise spans the full software development lifecycle, from
-              designing type-safe backend architectures with tRPC and Prisma to
-              creating real-time responsive frontends with Tailwind CSS and
-              Socket.io. I have a strong foundation in Data Structures &
-              Algorithms with 250+ problems solved.
+              My expertise spans the full software development lifecycle, from architecting type-safe backend services to creating responsive, interactive frontends. I have a strong foundation in Data Structures & Algorithms, having solved 300+ algorithmic problems on platforms like LeetCode and CodeChef using C++.
             </p>
             <p>
-              At Nestlé India, I engineered full-stack dashboards that reduced
-              manual reporting time by 60% and optimized backend services to
-              achieve 99%+ system accuracy. I actively contribute to open source
-              through Meshery (CNCF) and continuously upskill in Go,
-              cloud-native systems, and distributed architecture.
+              At Nestlé India, I worked as a Full Stack ML Intern, where I designed dashboards for an autonomous anomaly detection pipeline and architected hybrid ML systems. I also actively contribute to open source communities like freeCodeCamp and Meshery, and continuously upskill in cloud-native systems and distributed architectures.
             </p>
           </section>
+
+          <section class="service">
+            <h3 class="h3 service-title">Open Source Highlights</h3>
+            
+            <ul class="service-list">
+              <li class="service-item" id="os-modal-btn" style="grid-column: 1 / -1; cursor: pointer; display: flex; align-items: center; gap: 25px;">
+                <div class="service-icon-box" style="margin-bottom: 0; flex-shrink: 0;">
+                  <ion-icon name="logo-github" style="font-size: 55px; color: var(--orange-yellow-crayola);"></ion-icon>
+                </div>
+                <div class="service-content-box" style="text-align: left;">
+                  <h4 class="h4 service-item-title" style="margin-bottom: 10px;">10 Merged PRs at freeCodeCamp & Meshery (CNCF)</h4>
+                  <p class="service-item-text">
+                    Actively contributing to globally recognized open-source projects. Fixed critical client-side UI bugs with debounce logic, repaired failing Data Structures curriculum tests, and authored featured release documentation for Meshery v1.0 at KubeCon EU.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
 
           <!--
           - service
@@ -467,6 +482,25 @@
             <h3 class="h3 service-title">Technical Skills</h3>
 
             <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <ion-icon
+                    name="code-slash-outline"
+                    style="
+                      font-size: 40px;
+                      color: var(--orange-yellow-crayola);
+                      margin: auto;
+                    "
+                  ></ion-icon>
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Languages</h4>
+                  <p class="service-item-text">
+                    JavaScript, TypeScript, C++, Java, Go
+                  </p>
+                </div>
+              </li>
+
               <li class="service-item">
                 <div class="service-icon-box">
                   <ion-icon
@@ -481,8 +515,7 @@
                 <div class="service-content-box">
                   <h4 class="h4 service-item-title">Frontend</h4>
                   <p class="service-item-text">
-                    React.js 18/19, Next.js 14/15, TypeScript, Redux, Tailwind
-                    CSS, HTML5, CSS3, Responsive Design.
+                    React.js, Next.js, Redux, Context API, HTML5, CSS3, Tailwind CSS, Responsive Design, Figma
                   </p>
                 </div>
               </li>
@@ -501,9 +534,7 @@
                 <div class="service-content-box">
                   <h4 class="h4 service-item-title">Backend</h4>
                   <p class="service-item-text">
-                    Node.js, Express.js, Python, Go, Gin, RESTful APIs, GraphQL,
-                    tRPC, WebSockets (Socket.io), Prisma ORM, Authentication
-                    (JWT, OAuth).
+                    Node.js, Express.js, REST APIs, GraphQL, Socket.io, Cypress, Postman
                   </p>
                 </div>
               </li>
@@ -520,11 +551,30 @@
                   ></ion-icon>
                 </div>
                 <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Databases & DevOps</h4>
+                  <h4 class="h4 service-item-title">Databases & Tools</h4>
                   <p class="service-item-text">
                     PostgreSQL, MySQL, MongoDB, Redis, Database Design, Query
                     Optimization, AWS (EC2, S3, Lambda), Docker, GitHub Actions
                     (CI/CD), Git, VS Code, Postman, npm/yarn.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <ion-icon
+                    name="analytics-outline"
+                    style="
+                      font-size: 40px;
+                      color: var(--orange-yellow-crayola);
+                      margin: auto;
+                    "
+                  ></ion-icon>
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Data Science & ML</h4>
+                  <p class="service-item-text">
+                    Python, Pandas, NumPy, Scikit-learn, Isolation Forest, OpenPyXL
                   </p>
                 </div>
               </li>
@@ -665,8 +715,112 @@
 
         <article class="resume" data-page="resume">
           <header>
-            <h2 class="h2 article-title">Resume</h2>
+            <h2 class="h2 article-title">Timeline</h2>
           </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="logo-github"></ion-icon>
+              </div>
+
+              <h3 class="h3">Open Source Contributions</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  fix(client): debounce challenge submissions
+                  <span style="display: inline-block; background: rgba(255, 219, 112, 0.2); color: var(--orange-yellow-crayola); padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; margin-left: 8px; vertical-align: middle;">Featured</span>
+                </h4>
+                <span>freeCodeCamp/freeCodeCamp | <a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/67039" target="_blank" style="color: var(--orange-yellow-crayola); display: inline-block;">PR #67039</a></span>
+                <p class="timeline-text">
+                  Fixed a client-side bug where rapid clicks could submit a challenge multiple times by implementing debounce logic on the submission handler.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  fix(curriculum): repair failing tests for doubly linked list challenge
+                  <span style="display: inline-block; background: rgba(255, 219, 112, 0.2); color: var(--orange-yellow-crayola); padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; margin-left: 8px; vertical-align: middle;">Featured</span>
+                </h4>
+                <span>freeCodeCamp/freeCodeCamp | <a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/66965" target="_blank" style="color: var(--orange-yellow-crayola); display: inline-block;">PR #66965</a></span>
+                <p class="timeline-text">
+                  Repaired broken automated tests in the doubly linked list curriculum challenge so learners could correctly validate their solutions.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  fix(curriculum): update JS string quotes to double quotes
+                </h4>
+                <span>freeCodeCamp/freeCodeCamp | <a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/67099" target="_blank" style="color: var(--orange-yellow-crayola); display: inline-block;">PR #67099</a></span>
+                <p class="timeline-text">
+                  Standardized JavaScript string quotes to double quotes across curriculum files for consistency.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  fix(curriculum): add accessibility concern notes for accesskey in lecture
+                </h4>
+                <span>freeCodeCamp/freeCodeCamp | <a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/67087" target="_blank" style="color: var(--orange-yellow-crayola); display: inline-block;">PR #67087</a></span>
+                <p class="timeline-text">
+                  Added notes about accessibility concerns around the `accesskey` attribute in the lecture content to better inform learners.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  fix(curriculum): update focus style instructions and add outline test in job application form lab
+                </h4>
+                <span>freeCodeCamp/freeCodeCamp | <a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/67055" target="_blank" style="color: var(--orange-yellow-crayola); display: inline-block;">PR #67055</a></span>
+                <p class="timeline-text">
+                  Clarified focus style user story and added an outline:none assertion to fix a UX issue where the required border was hidden behind the browser's default outline.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  fix(curriculum): repair failing border test in form step 35
+                </h4>
+                <span>freeCodeCamp/freeCodeCamp | <a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/67044" target="_blank" style="color: var(--orange-yellow-crayola); display: inline-block;">PR #67044</a></span>
+                <p class="timeline-text">
+                  Fixed a broken automated border test in form step 35 of the curriculum so it correctly validates student submissions.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  fix(curriculum): clarify step 9 instructions in emoji reactor workshop
+                </h4>
+                <span>freeCodeCamp/freeCodeCamp | <a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/66971" target="_blank" style="color: var(--orange-yellow-crayola); display: inline-block;">PR #66971</a></span>
+                <p class="timeline-text">
+                  Improved the wording of step 9 instructions in the emoji reactor workshop to reduce learner confusion.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  [Docs] Added missing image in the docs
+                </h4>
+                <span>meshery/meshery | <a href="https://github.com/meshery/meshery/pull/17404" target="_blank" style="color: var(--orange-yellow-crayola); display: inline-block;">PR #17404</a></span>
+                <p class="timeline-text">
+                  Added a missing image to the Meshery documentation to restore visual completeness of the docs page.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  [News] Meshery v1.0 Launches at KubeCon EU with Governance-First Cloud Native Design
+                </h4>
+                <span>layer5io/layer5 | <a href="https://github.com/layer5io/layer5/pull/7552" target="_blank" style="color: var(--orange-yellow-crayola); display: inline-block;">PR #7552</a></span>
+                <p class="timeline-text">
+                  Contributed a news article covering Meshery v1.0's launch at KubeCon EU, highlighting its governance-first approach to cloud native design.
+                </p>
+              </li>
+            </ol>
+          </section>
 
           <section class="timeline">
             <div class="title-wrapper">
@@ -680,25 +834,21 @@
             <ol class="timeline-list">
               <li class="timeline-item">
                 <h4 class="h4 timeline-item-title">
-                  Nestlé India (Full-Stack AI ML Engineer Intern)
+                  Nestlé India (Full Stack ML Intern)
                 </h4>
-                <span>Apr 2025 — Jul 2025</span>
+                <span>April 2025 — July 2025</span>
                 <p class="timeline-text">
-                  Gurugram, Haryana.<br />
-                  - Built responsive full-stack web applications using React.js,
-                  Node.js, Express.js, and RESTful APIs, creating interactive
-                  dashboards for real-time data monitoring visualization,
-                  reducing manual reporting time by 60%.<br />
-                  - Engineered backend services and API endpoints with data
-                  validation logic, processing large datasets with optimized
-                  database queries and achieving 99%+ system accuracy.<br />
-                  - Implemented automated reporting modules using Python and
-                  openpyxl, and integrated unit/integration testing with Jest
-                  across the application stack.
+                  Gurugram, Haryana, India.<br />
+                  - Designed a responsive React dashboard for an autonomous anomaly detection pipeline, enabling enterprise stakeholders to interactively visualize flagged inconsistencies across 344,000+ records.<br />
+                  - Architected a hybrid rule-based and Isolation Forest ML anomaly detection system, successfully identifying errors without manual labeling to achieve a 93.8% F1 score and 99.6% recall.<br />
+                  - Constructed an auto-column-type inference pipeline (numerical, categorical, datetime) with targeted validation rules, reducing the misclassification rate to 0.50%.<br />
+                  - Validated model generalization utilizing confusion matrices across 3 distinct datasets, sustaining 99.5% accuracy on training data and 99.3% on large-scale unseen sets.
                 </p>
               </li>
             </ol>
           </section>
+
+
 
           <section class="timeline">
             <div class="title-wrapper">
@@ -712,38 +862,42 @@
             <ol class="timeline-list">
               <li class="timeline-item">
                 <h4 class="h4 timeline-item-title">
-                  B.Tech in Information Technology
+                  Bachelor of Technology in Information Technology
                 </h4>
                 <span>Nov 2022 — May 2026</span>
                 <p class="timeline-text">
-                  Ajay Kumar Garg Engineering College, Ghaziabad, Uttar Pradesh.
-                </p>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Higher Secondary Certificate (HSC)
-                </h4>
-                <span>2019 — 2021</span>
-                <p class="timeline-text">
-                  Holy Mission Senior Secondary School, Danapur, Patna.<br />
-                  Stream: Physics, Chemistry, Maths.<br />
-                  Score: 88.2%
-                </p>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Secondary School Certificate (SSC)
-                </h4>
-                <span>2012 — 2019</span>
-                <p class="timeline-text">
-                  Radiant International School, Patna.<br />
-                  Score: 82%
+                  Ajay Kumar Garg Engineering College, Ghaziabad, Uttar Pradesh, India.
                 </p>
               </li>
             </ol>
           </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="trophy-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Certifications & Achievements</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Certifications</h4>
+                <p class="timeline-text">
+                  Software Engineering (JPMorgan Chase) | Full Stack Web Dev (Sheryians) | Data Science (Infosys Springboard)
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Competitive Programming</h4>
+                <p class="timeline-text">
+                  Solved 300+ algorithmic problems on LeetCode and CodeChef using C++.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+
         </article>
 
         <!--
@@ -1452,7 +1606,7 @@
     <!--
     - custom js link
   -->
-    <script type="module" src="./assets/js/script.js"></script>
+    <script type="module" src="./assets/js/script.js?v=2.0"></script>
     <script type="module" src="./assets/js/cursor.js"></script>
 
     <!--
@@ -1466,5 +1620,114 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <!-- Open Source Modal (Tailwind-style) - Moved outside 'article' for proper centering -->
+    <div id="os-modal-wrapper" class="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 md:p-20 pointer-events-none opacity-0 transition-opacity duration-200 ease-out" role="dialog" aria-modal="true">
+      <!-- Background backdrop -->
+      <div id="os-modal-backdrop" class="fixed inset-0 bg-slate-900/70 backdrop-blur-sm transition-opacity duration-200 ease-out opacity-0 pointer-events-none" aria-hidden="true"></div>
+
+      <!-- Modal panel -->
+      <div id="os-modal-panel" class="relative w-full max-w-2xl bg-slate-800 rounded-xl shadow-2xl overflow-hidden transform scale-95 opacity-0 transition-all duration-200 ease-out pointer-events-auto flex flex-col max-h-[85vh]">
+        <!-- Header -->
+        <div class="border-b border-slate-700 p-4 flex items-center justify-between">
+          <h4 class="text-lg font-semibold text-white" style="margin-bottom:0; text-transform:none;">Open Source Contributions</h4>
+          <button id="os-modal-close-btn" class="text-slate-400 hover:text-slate-300 focus:outline-none transition-colors">
+            <ion-icon name="close-outline" style="font-size: 24px;"></ion-icon>
+          </button>
+        </div>
+
+        <!-- Content list -->
+        <div class="overflow-y-auto p-4 sm:p-6 space-y-4">
+          <ol class="space-y-6 relative border-l border-slate-700 ml-3">
+            <li class="pl-6 relative">
+              <div class="absolute w-3 h-3 bg-slate-700 rounded-full -left-[6.5px] top-1.5 border-2 border-slate-800"></div>
+              <h4 class="text-base font-semibold text-white mb-1" style="text-transform:none;">
+                fix(client): debounce challenge submissions
+                <span class="inline-block bg-yellow-900/30 text-yellow-500 px-2 py-0.5 rounded text-xs font-bold ml-2 align-middle">Featured</span>
+              </h4>
+              <span class="text-sm text-slate-400 block mb-2">freeCodeCamp/freeCodeCamp | <a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/67039" target="_blank" class="text-yellow-500 hover:underline">PR #67039</a></span>
+              <p class="text-sm text-slate-300">Fixed a client-side bug where rapid clicks could submit a challenge multiple times by implementing debounce logic on the submission handler.</p>
+            </li>
+
+            <li class="pl-6 relative">
+              <div class="absolute w-3 h-3 bg-slate-700 rounded-full -left-[6.5px] top-1.5 border-2 border-slate-800"></div>
+              <h4 class="text-base font-semibold text-white mb-1" style="text-transform:none;">
+                fix(curriculum): repair failing tests for doubly linked list challenge
+                <span class="inline-block bg-yellow-900/30 text-yellow-500 px-2 py-0.5 rounded text-xs font-bold ml-2 align-middle">Featured</span>
+              </h4>
+              <span class="text-sm text-slate-400 block mb-2">freeCodeCamp/freeCodeCamp | <a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/66965" target="_blank" class="text-yellow-500 hover:underline">PR #66965</a></span>
+              <p class="text-sm text-slate-300">Repaired broken automated tests in the doubly linked list curriculum challenge so learners could correctly validate their solutions.</p>
+            </li>
+
+            <li class="pl-6 relative">
+              <div class="absolute w-3 h-3 bg-slate-700 rounded-full -left-[6.5px] top-1.5 border-2 border-slate-800"></div>
+              <h4 class="text-base font-semibold text-white mb-1" style="text-transform:none;">
+                fix(curriculum): update JS string quotes to double quotes
+              </h4>
+              <span class="text-sm text-slate-400 block mb-2">freeCodeCamp/freeCodeCamp | <a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/67099" target="_blank" class="text-yellow-500 hover:underline">PR #67099</a></span>
+              <p class="text-sm text-slate-300">Standardized JavaScript string quotes to double quotes across curriculum files for consistency.</p>
+            </li>
+
+            <li class="pl-6 relative">
+              <div class="absolute w-3 h-3 bg-slate-700 rounded-full -left-[6.5px] top-1.5 border-2 border-slate-800"></div>
+              <h4 class="text-base font-semibold text-white mb-1" style="text-transform:none;">
+                fix(curriculum): add accessibility concern notes for accesskey in lecture
+              </h4>
+              <span class="text-sm text-slate-400 block mb-2">freeCodeCamp/freeCodeCamp | <a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/67087" target="_blank" class="text-yellow-500 hover:underline">PR #67087</a></span>
+              <p class="text-sm text-slate-300">Added notes about accessibility concerns around the `accesskey` attribute in the lecture content to better inform learners.</p>
+            </li>
+
+            <li class="pl-6 relative">
+              <div class="absolute w-3 h-3 bg-slate-700 rounded-full -left-[6.5px] top-1.5 border-2 border-slate-800"></div>
+              <h4 class="text-base font-semibold text-white mb-1" style="text-transform:none;">
+                fix(curriculum): update focus style instructions and add outline test in job application form lab
+              </h4>
+              <span class="text-sm text-slate-400 block mb-2">freeCodeCamp/freeCodeCamp | <a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/67055" target="_blank" class="text-yellow-500 hover:underline">PR #67055</a></span>
+              <p class="text-sm text-slate-300">Clarified focus style user story and added an outline:none assertion to fix a UX issue where the required border was hidden behind the browser's default outline.</p>
+            </li>
+
+            <li class="pl-6 relative">
+              <div class="absolute w-3 h-3 bg-slate-700 rounded-full -left-[6.5px] top-1.5 border-2 border-slate-800"></div>
+              <h4 class="text-base font-semibold text-white mb-1" style="text-transform:none;">
+                fix(curriculum): repair failing border test in form step 35
+              </h4>
+              <span class="text-sm text-slate-400 block mb-2">freeCodeCamp/freeCodeCamp | <a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/67044" target="_blank" class="text-yellow-500 hover:underline">PR #67044</a></span>
+              <p class="text-sm text-slate-300">Fixed a broken automated border test in form step 35 of the curriculum so it correctly validates student submissions.</p>
+            </li>
+
+            <li class="pl-6 relative">
+              <div class="absolute w-3 h-3 bg-slate-700 rounded-full -left-[6.5px] top-1.5 border-2 border-slate-800"></div>
+              <h4 class="text-base font-semibold text-white mb-1" style="text-transform:none;">
+                fix(curriculum): clarify step 9 instructions in emoji reactor workshop
+              </h4>
+              <span class="text-sm text-slate-400 block mb-2">freeCodeCamp/freeCodeCamp | <a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/66971" target="_blank" class="text-yellow-500 hover:underline">PR #66971</a></span>
+              <p class="text-sm text-slate-300">Improved the wording of step 9 instructions in the emoji reactor workshop to reduce learner confusion.</p>
+            </li>
+
+            <li class="pl-6 relative">
+              <div class="absolute w-3 h-3 bg-slate-700 rounded-full -left-[6.5px] top-1.5 border-2 border-slate-800"></div>
+              <h4 class="text-base font-semibold text-white mb-1" style="text-transform:none;">
+                [Docs] Added missing image in the docs
+              </h4>
+              <span class="text-sm text-slate-400 block mb-2">meshery/meshery | <a href="https://github.com/meshery/meshery/pull/17404" target="_blank" class="text-yellow-500 hover:underline">PR #17404</a></span>
+              <p class="text-sm text-slate-300">Added a missing image to the Meshery documentation to restore visual completeness of the docs page.</p>
+            </li>
+
+            <li class="pl-6 relative">
+              <div class="absolute w-3 h-3 bg-slate-700 rounded-full -left-[6.5px] top-1.5 border-2 border-slate-800"></div>
+              <h4 class="text-base font-semibold text-white mb-1" style="text-transform:none;">
+                [News] Meshery v1.0 Launches at KubeCon EU with Governance-First Cloud Native Design
+              </h4>
+              <span class="text-sm text-slate-400 block mb-2">layer5io/layer5 | <a href="https://github.com/layer5io/layer5/pull/7552" target="_blank" class="text-yellow-500 hover:underline">PR #7552</a></span>
+              <p class="text-sm text-slate-300">Contributed a news article covering Meshery v1.0's launch at KubeCon EU, highlighting its governance-first approach to cloud native design.</p>
+            </li>
+          </ol>
+        </div>
+
+        <!-- Footer -->
+        <div class="border-t border-slate-700 p-4 bg-slate-800/50 flex justify-end">
+          <span class="text-xs text-slate-400">Press <kbd class="font-sans px-2 py-1 bg-slate-700 border border-slate-600 rounded-md shadow-sm ml-1">ESC</kbd> to close</span>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

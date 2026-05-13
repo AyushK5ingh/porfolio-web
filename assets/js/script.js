@@ -108,6 +108,76 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+// Open Source Modal Logic (Tailwind version)
+const osModalBtn = document.querySelector("#os-modal-btn");
+const osModalWrapper = document.querySelector("#os-modal-wrapper");
+const osModalBackdrop = document.querySelector("#os-modal-backdrop");
+const osModalPanel = document.querySelector("#os-modal-panel");
+const osModalCloseBtn = document.querySelector("#os-modal-close-btn");
+
+if (osModalWrapper && osModalBtn) {
+  let isOsModalOpen = false;
+
+  const openOsModal = () => {
+    isOsModalOpen = true;
+    
+    // Scroll Lock
+    document.body.style.overflow = 'hidden';
+
+    // Show wrapper
+    osModalWrapper.classList.remove("pointer-events-none", "opacity-0");
+    osModalWrapper.classList.add("opacity-100");
+
+    // Fade in Backdrop
+    osModalBackdrop.classList.remove("opacity-0");
+    osModalBackdrop.classList.add("opacity-100");
+
+    // Animate Panel (fade in & scale up)
+    osModalPanel.classList.remove("opacity-0", "scale-95");
+    osModalPanel.classList.add("opacity-100", "scale-100");
+
+    // Focus Management
+    setTimeout(() => {
+      osModalCloseBtn.focus();
+    }, 50);
+  };
+
+  const closeOsModal = () => {
+    isOsModalOpen = false;
+
+    // Scroll Unlock
+    document.body.style.overflow = '';
+
+    // Hide wrapper
+    osModalWrapper.classList.remove("opacity-100");
+    osModalWrapper.classList.add("pointer-events-none", "opacity-0");
+
+    // Fade out Backdrop
+    osModalBackdrop.classList.remove("opacity-100");
+    osModalBackdrop.classList.add("opacity-0");
+
+    // Animate Panel (fade out & scale down)
+    osModalPanel.classList.remove("opacity-100", "scale-100");
+    osModalPanel.classList.add("opacity-0", "scale-95");
+  };
+
+  // Event Listeners
+  osModalBtn.addEventListener("click", openOsModal);
+  if (osModalCloseBtn) osModalCloseBtn.addEventListener("click", closeOsModal);
+
+  // Click Outside
+  if (osModalBackdrop) {
+    osModalBackdrop.addEventListener("click", closeOsModal);
+  }
+
+  // Escape Key
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && isOsModalOpen) {
+      closeOsModal();
+    }
+  });
+}
+
 // Handle Form Submission
 form.addEventListener("submit", function (e) {
   e.preventDefault();
